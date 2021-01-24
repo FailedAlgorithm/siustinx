@@ -1,0 +1,109 @@
+.Age {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Box {
+    height: 85vh;
+    width: 60vw;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    z-index: 200;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    
+    border: 4px solid #2c2c2c;
+    border-radius: 10px;
+}
+
+.Info {
+    font-family: 'Lexend Deca';
+    font-size: 27px;
+    color: #2c2c2c;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.Question {
+    font-family: 'Lexend Deca';
+    font-size: 80px;
+    letter-spacing: 0px;
+    color: #2c2c2c;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+
+.Question span {
+    color: #FF5555;
+}
+
+.Buttons {
+    display: flex;
+}
+
+.Buttons button {
+    height: 125px;
+    width: 300px;
+    background-color: white;
+    border: 2px solid #2c2c2c;
+    border-radius: 0px;
+    margin: 40px 20px;
+
+    font-family: 'Lexend Deca';
+    font-size: 25px;
+    color: #2c2c2c;
+
+    outline: none;
+    cursor: pointer;
+}
+
+.Buttons button:hover {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.Go {
+    font-family: 'Lexend Deca';
+    font-size: 20px;
+    color: #2c2c2c;
+    text-align: center;
+}
+
+.Exit {
+    height: 50px;
+    width: 125px;
+    margin: 20px 20px 0;
+
+    background-color: #FF5555;
+    border: 1.5px solid #2c2c2c;
+
+    font-family: 'Lexend Deca';
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    outline: none;
+    cursor: pointer;
+}
+
+.Exit:hover {
+    background-color: #2c2c2c;
+}

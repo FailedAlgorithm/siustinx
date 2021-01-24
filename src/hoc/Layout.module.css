@@ -1,0 +1,27 @@
+.Background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 0.35;
+}
+
+.Yellow {
+    background-color: yellow;
+    height: 33.333vh;
+    width: 100%;
+}
+
+.Green {
+    background-color: green;
+    height: 33.333vh;
+    width: 100%;
+}
+
+.Red {
+    background-color: red;
+    height: 33.333vh;
+    width: 100%;
+}

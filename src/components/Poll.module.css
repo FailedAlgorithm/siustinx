@@ -1,0 +1,77 @@
+.Poll {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    z-index: 200;
+    position: absolute;
+}
+
+.Greeting {
+    height: 33%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.Greeting div {
+    background-color: white;
+    width: 60vw;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.Greeting h1 {
+    font-family: 'Lexend Deca';
+    font-size: 75px;
+    color: #2c2c2c;
+}
+
+.Candidates {
+    height: 33%;
+    display: flex;
+    align-items: center;
+}
+
+.Send {
+    height: 33%;
+    display: flex;
+    align-items: center;   
+}
+
+.Send button {
+    height: 60px;
+    width: 200px;
+
+    background-color: #FF5555;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 20px;
+    
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    font-family: 'Lexend Deca';
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    transition: all 0.2s;
+}
+
+.Send button:hover {
+    transform: scale(1.05);
+}
+
+.Send button:disabled {
+    background-color: rgb(206, 206, 206);
+    transform: none;
+    cursor: no-drop;
+}

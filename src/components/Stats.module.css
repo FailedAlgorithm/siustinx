@@ -1,0 +1,285 @@
+.Stats {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    z-index: 200;
+    position: absolute;
+}
+
+.Leaders {
+    height: 33.333%;
+    width: 80vw;
+
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+
+    margin: 0;
+    padding: 0;
+}
+
+.Leaders #Banner {
+    width: 60vw;
+    height: 60%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.Leaders h1 {
+    font-family: 'Lexend Deca';
+    font-size: 75px;
+    color: #2c2c2c;
+}
+
+.Leader {
+    width: 80vw;
+    height: 70px;
+    background-color: #76ECFF;
+    margin-top: 15px;
+
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.Leader .Voted {
+    height: 100%;
+    width: 65%;
+    background-color: #FCB9B9;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.Leader .Site, .Leader .Game {
+    position: absolute;
+    top: 12px;
+    margin: 0 15px;
+    font-family: 'Lexend Deca';
+    font-size: 35px;
+    color: white;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.Game {
+    right: 0;   
+}
+
+.Leader .Name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 80%;
+    width: 50%;
+    background-color: white;
+
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+
+.Leader .Name p {
+    font-family: 'Lexend Deca';
+    font-size: 1.75em;
+    color: #2c2c2c;
+}
+
+.Other {
+    height: 33.333%;
+    width: 80vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-flow: column;
+}
+
+.Other .Leader .Site, .Other .Leader .Game {
+    top: 3px;
+}
+
+.Chat {
+    height: 33.333%;
+    width: 100vw;
+}
+
+.Chat .Message {
+    height: 100px;
+    width: 100px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+
+    border: none;
+    border-radius: 50%;
+    background-color: #C2F1FF;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+    cursor: pointer;
+    outline: none;
+}
+
+.Chat .Message:hover {
+    filter: brightness(0.95);
+}
+
+.Chat .Message .Mail {
+    height: 50px;
+    width: 50px;
+
+    background-image: url('../assets/images/mail.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+}
+
+.Chat .Message .Mail .New {
+    background-color: #FF5555;
+    border-radius: 50%;
+    color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -2px;
+    right: -10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Chat .Message .Notification,
+.Chat .Chatbox .HisMessage .MessageBox {
+    height: 50px;
+    
+    position: absolute;
+    right: 130px;
+    width: 220px;
+
+    border-radius: 20px;
+    background-color: #C2F1FF;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Chat .Message .Notification .Arrow,
+.Chat .Chatbox .HisMessage .MessageBox .Arrow {
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;     
+    border-left: 20px solid #C2F1FF; 
+    border-radius: 40px;
+
+    padding: 0;
+    margin: 0;
+
+    position: absolute;
+    right: -10px;
+}
+
+.Chat .Chatbox .HisMessage .MessageBox .Arrow {      
+    border-left: none; 
+    border-right: 20px solid #C2F1FF; 
+    left: -10px;
+}
+
+.Chat .Message .Notification .Text {
+    font-family: 'Lexend Deca';
+    font-size: 19px;
+    color: #ff7474;
+    text-transform: uppercase;
+}
+
+.Chat .Chatbox {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+
+    height: 40%;
+    width: 325px;
+
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.Chat .Chatbox .Info {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    position: relative;
+}
+
+.Chat .Chatbox .Info .Photo {    
+    margin-left: 20px;
+}
+
+.Chat .Chatbox .Photo {    
+    height: 35px;
+    width: 35px;
+    background-image: url('../assets/images/karb.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-position: center;
+}
+
+.Chat .Chatbox .Info .Name {    
+    font-family: 'Lexend Deca';
+    font-size: 18px;
+    color: #2c2c2c;
+    margin-left: 10px;
+}
+
+.Chat .Chatbox .Info .Close {
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin: 0 10px;
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+}
+
+.Chat .Chatbox .HisMessage {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.Chat .Chatbox .HisMessage .MessageBox {
+    transform: scale(0.75);
+    left: 35px;
+    height: 60px;
+}
+
+
+.Chat .Chatbox .HisMessage .Text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
